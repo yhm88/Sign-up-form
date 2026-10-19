@@ -1,3 +1,82 @@
+@font-face {
+  font-family: "Italianno";
+  src: url(font/Italianno-Regular.woff2) format("woff2");
+}
+
+*, *::before, *::after {
+  box-sizing:border-box;
+}
+
+/* the image style */
 body {
-  background-color: lightblue;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.bac-img {
+  width: 33vw;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.bac-img > img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+/* the logo style */
+.bac-img .logo {
+  font-size: 2.5rem;
+
+  position: absolute;
+  top: 180px;
+  left: 0;
+  right: 0;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bac-img .logo img {
+  height: 3em;
+  width: auto;
+}
+
+.bac-img .logo span {
+  font-family: "Italianno", sans-serif;
+  color: white;
+  font-weight: bold;
+}
+
+/* the credit style */ 
+.bac-img .logo + .credit {
+  font-family: sans-serif;
+  color: white;
+  font-size: 0.8rem;
+  
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.bac-img .logo + .credit a {
+  color: yellow;
+}
+
+.right {
+  flex: 1;
 }

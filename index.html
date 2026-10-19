@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-up form</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
+  <div class="bac-img">
+    <img src="Image by the iop from Pixabay.jpg">
+
+    <div class="logo">
+      <img src="odin-lined.png" alt="ODIN">
+      <span>ODIN</span>
+    </div>
+
+    <div class="credit">
+      Image by <a href="https://pixabay.com/users/the_iop-1181394/" target="_blank">the iop</a> from <a href="https://www.google.com/goto?url=CAESUwHrOzAV91At6542RMMOKYg-3STfvq9eGXuDslLUH5DyLLNComg5qZs4jlfN_eqD1oc_fx8w_1fB6Ywxs8QiclKTcl9akixXua6ddhBj7XBV3sa7" target="_blank">Pixabay</a>
+    </div>
+  </div>
+
+  <div class="right">
+    <section class="intro-sec">
+      <p class="para">This is not a real online service! You know you need something like this in your life to help you
+        realize your deepest dreams. Sign up now to get started.</p>
+
+      <h2 class="head2">You know you want to.</h2>
+    </section>
+
+    <form method="post">
+      <div class="title-forms">
+        <h2>Let's do this!</h2>
+        <div class="forms-container">
+          <div class="forms">
+            <label for="form1">FIRST NAME</label>
+            <input id="form1" name="first-name" type="text">
+          </div>
+          <div class="forms">
+            <label for="form2">LAST NAME</label>
+            <input id="form2" name="last-name" type="text">
+          </div>
+
+          <div class="forms">
+            <label for="form3">EMAIL</label>
+            <input id="form3" name="email" type="email">
+          </div>
+          <div class="forms">
+            <label for="form4">PHONE NUMBER</label>
+            <input id="form4" name="phone" type="text">
+          </div>
+
+          <div class="forms">
+            <label for="form5">PASSWORD</label>
+            <input id="form5" name="password" type="password" required minlength="6">
+            <span></span>
+          </div>
+          <div class="forms">
+            <label for="form6">CONFIRM PASSWORD</label>
+            <input id="form6" name="confirm-password" type="password" required minlength="6">
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <button type="submit">Creat Account</button>
+    </form>
+  </div>
 </body>
+
 </html>
