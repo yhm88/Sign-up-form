@@ -4,7 +4,7 @@
 }
 
 *, *::before, *::after {
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 /* the image style */
@@ -77,6 +77,98 @@ body {
   color: yellow;
 }
 
+/* right side of the page */
 .right {
   flex: 1;
+  
+  display: flex;
+  flex-wrap: none;
+  flex-direction: column;
+  
+  background-color: whitesmoke;
+  width: 67vw;
+}
+
+/* right top */
+.intro-sec {
+  width: 100%; 
+  height: auto;
+
+  margin-top: 6vh;
+  display: flex;
+  flex-direction: column;
+
+  padding: 1.2rem 0 1.2rem 0;
+}
+
+.intro-sec .para {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.intro-sec .para,
+.intro-sec .head2 {
+  max-width: 55%; 
+  padding-left: 50px;
+}
+
+/* right bottom */
+form {
+    width: 100%;
+}
+/* head and forms*/
+.title-forms {
+  background-color: white;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 15px 0 40px 0;
+}
+
+.title-forms h2 {
+  margin-top: 0;
+  margin-left: 50px;
+}
+
+/* forms */
+.forms-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.forms {
+  flex: 0 0 33.3%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+input {
+  padding: 8px 0 8px 0;
+  border: 1.5px solid #E5E7EB;
+}
+
+input:user-invalid {
+  border-color: red;
+}
+
+input:focus {
+  border-color: blue;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  margin-left: 50px;
+  margin-top: 35px; 
+  color: white;
+  font-size: 1.2rem;
+  background-color: rgb(63,112,175);
+
+  border-radius: 5px;
+  border: none;
+  padding: 10px 40px 10px 40px;
+}
+
+button:hover {
+  cursor: pointer;
 }
